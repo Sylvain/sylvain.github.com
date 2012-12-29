@@ -6,6 +6,8 @@ group: navigation
 ---
 {% include JB/setup %}
 
+<div class="tags-page">
+
 <ul class="tag_box inline">
   {% assign tags_list = site.tags %}  
   {% include JB/tags_list %}
@@ -19,3 +21,5 @@ group: navigation
     {% include JB/pages_list %}
   </ul>
 {% endfor %}
+
+</div>

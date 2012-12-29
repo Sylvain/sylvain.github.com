@@ -1,0 +1,184 @@
+/* Override some defaults */
+html, body {
+  background-color: #F9F7F5;
+  color: #666;
+
+}
+
+#header {
+  border-top: 4px solid #DED6D4;
+  background: #f2ece6;
+  border-bottom: 4px solid #DED6D4;
+  margin-bottom: 30px;
+
+}
+
+h2 {
+  color: #555;
+}
+
+.container-narrow {
+  margin: 0 auto;
+  max-width: 660px;
+}
+
+.page-header {
+  border: none;
+  margin: 20px 0 0 0;
+}
+
+.page-header h1 {
+  font-size: 22px;
+  color: #444;
+  margin: 0;
+  line-height: 22px;
+}
+
+a {
+  color: #4265A7;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #933;
+  text-decoration: none;
+}
+
+.masthead {
+  margin: 0 auto;
+  max-width: 660px; 
+  min-height: 130px; 
+}
+
+.masthead a {
+  color: #555;
+}
+
+.masthead a:hover {
+  color: #933;
+  text-decoration: none;
+}
+
+.masthead h3 {
+  margin-bottom: 0;
+}
+
+.masthead .avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  margin-top: 10px;
+}
+
+.masthead .infos {
+  margin-top: 5px;
+  color: #777;
+}
+
+.post  {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #EFEAE4;
+}
+
+.post h1 {
+  font-size: 22px;
+  color: #444;
+  margin: 0;
+  line-height: 22px;
+}
+
+.post h2 {
+  font-size: 18px;
+  color: #555;
+}
+
+.post h3 {
+  font-size: 16px;
+}
+
+.post .date {
+  margin: 3px 0 20px 0;
+  color: #C0B2A5;
+  font-size: 12px;
+}
+
+.post .date-link {
+  color: #BEAA99;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0 0 0 0;
+  font-size: 15px;
+  line-height: 19.5px;
+}
+
+.post .date-link span {
+  color: #E0C9B5;
+}
+
+.posts .post h1 {
+  font-size: 15px;
+  line-height: 19.5px;
+}
+
+.posts .post-header {
+  margin-bottom: 15px;
+}
+
+/* tag_box ======================================================== */
+
+.tags span.title {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #BEAA99;
+  padding: 0 0 0 28px;
+  line-height: 22px;
+  background: url(../img/icon-tags.png) no-repeat 0 50%;
+}
+
+.tag_box {
+	list-style:none;
+	margin:0;
+	overflow:hidden;
+}
+.tag_box li {
+  font-size: 12px;
+}
+.tag_box.inline li {
+	float:left;
+}
+.tag_box a {
+	color:#BEAA99;
+	text-decoration:none;
+}
+.tag_box a span{
+	vertical-align:super;
+	font-size:0.8em;
+}
+.tag_box a.active {
+	background:#57A957;
+	border:1px solid #4C964D;
+	color:#FFF;
+}
+
+
+/* tags_page ======================================================== */
+
+.tags-page h2 {
+  font-size: 22px;
+  color: #444;
+  margin-top: 15px;  
+  line-height: 22px;
+}
+	
+/* archive-page ======================================================== */
+
+.archive-page  h3 {
+  font-size: 16px;
+  color: #444;
+  margin-top: 15px;  
+  line-height: 18.5px;
+}

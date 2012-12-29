@@ -1,0 +1,58 @@
+---
+layout: page
+title: Derniers articles
+tagline:   
+---
+
+{% include JB/setup %}
+
+<div class="posts">
+  {% for post in paginator.posts %}
+
+    <div class="post">
+      <div class="row-fluid">
+
+        <div class="span2 date-link hidden-phone"> 
+          {{ post.date | date: "%d %h" }} <span>{{ post.date | date: "%Y" }}</span>
+        </div>
+
+        <div class="span10">
+
+          <div class="post-header">
+            <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }} {% if post.tagline %} <small>{{ post.tagline }}</small>{% endif %}</a></h1>
+          </div>
+
+          <div class="post-content">
+            {{ post.content }}
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+  {% endfor %}
+</div>
+
+<hr>
+<div class="pagination">
+  <ul>
+  {% if paginator.previous_page %}
+    <li class="prev"><a href="{{ BASE_PATH }}{{ paginator.previous_page }}" title="{{ paginator.previous.title }}">&larr; Previous</a></li>
+  {% else %}
+    <li class="prev disabled"><a>&larr; Previous</a></li>
+  {% endif %}
+    <li><a>Page {{paginator.page}} sur {{paginator.total_pages}}</a></li>
+    <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+  {% if paginator.next_page %}
+    <li class="next"><a href="{{ BASE_PATH }}{{ paginator.next_page }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+  {% else %}
+    <li class="next disabled"><a>Next &rarr;</a>
+  {% endif %}
+  </ul>
+</div>
+<hr>
+

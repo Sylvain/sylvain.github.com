@@ -16,12 +16,20 @@
 
       <div class="post-header">
         <h1>
-           {{page.tags}} {{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}
+          {% if page.tags.first == 'Statut' %} 
+            {{ content }}
+          {% elsif page.tags.first == 'Lien' %}
+            <a href="{{ page.meta.postalicious_href }}">{{ page.title }}</a>
+          {% else %}
+            {{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}
+          {% endif %}
         </h1>
         <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
       </div>
 
-      {{ content }}
+      {% unless page.tags.first == 'Statut' %} 
+        {{ content }}
+      {% endunless %}
 
       <hr>
       <div class="pagination">

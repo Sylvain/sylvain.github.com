@@ -5,6 +5,7 @@
     <title>{{ page.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
+    <link rel="canonical" href="http://sylvaingautier.net{{ page.url | replace:'index.html','' }}" />
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -29,12 +30,13 @@
     <div id="header">
       <div class="masthead row-fluid">
         <div class="span2">
-        <img src="{{ ASSET_PATH }}/img/avatar.png" class="avatar">
+        <a class="brand" href="{{ HOME_PATH }}"><img src="{{ ASSET_PATH }}/img/avatar.png" class="avatar"></a>
         </div>
         <div class="infos span10">
         <h3><a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a></h3>
         <p>{{ site.tagline }}</p>
-        <p><a href="http://twitter.com/sylvain_">Twitter</a> - <a href="http://www.linkedin.com/in/sgautier">LinkedIn</a> - <a href="https://www.facebook.com/sylvaing">Facebook</a> - <a href="https://github.com/sylvain">Github</a></p>
+        <p>Paris, France</p>
+        <p class="links"><a href="http://twitter.com/sylvain_">Twitter</a> - <a href="http://www.linkedin.com/in/sgautier">LinkedIn</a> - <a href="https://www.facebook.com/sylvaing">Facebook</a> - <a href="https://github.com/sylvain">Github</a></p>
       </div>
       </div>
     </div>

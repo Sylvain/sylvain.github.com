@@ -60,7 +60,9 @@ a:hover {
 }
 
 .masthead h3 {
-  margin-bottom: 0;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  line-height: 24.5px;
 }
 
 .masthead .avatar {
@@ -71,8 +73,16 @@ a:hover {
 }
 
 .masthead .infos {
-  margin-top: 5px;
+  margin-top: 0px;
   color: #777;
+}
+
+.masthead p {
+  margin-bottom: 0;
+}
+
+.masthead p.links {
+  margin-top: 5px;
 }
 
 .post  {
@@ -124,6 +134,17 @@ a:hover {
 
 .posts .post-header {
   margin-bottom: 15px;
+}
+
+.post .aligncenter {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.post img {
+  border: 5px solid #E6E3D2;
+  margin-top: 5px;
 }
 
 /* tag_box ======================================================== */

@@ -1,0 +1,41 @@
+---
+layout: post
+title: PHP et MySQL sur Mac OS X
+tags:
+- Article
+- mac os x
+- mysql
+- php
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '2'
+---
+<p style="text-align: left;">Ce qui suit s'applique à Mac OS X 10.5 (Léopard) uniquement. Si comme moi, vous voulez tester certains sites en local, vous allez voir c'est on ne peut plus simple.<!--more--></p>
+
+<h3 style="text-align: left;">PHP</h3>
+Il vous suffit d'activer le module PHP dans le fichier d'Apache et d'activer ce dernier. Commencer par ouvrir un Terminal et éditer le fichier "/etc/apache2/httpd.conf" avec les droits admin (par ex. sudo vi httpd.conf).
+
+Cherchez la ligne :
+<pre>#LoadModule php5_module        libexec/apache2/libphp5.so</pre>
+Et décommentez la :
+<pre style="text-align: left;"> LoadModule php5_module        libexec/apache2/libphp5.so</pre>
+<p style="text-align: left;">Maintenant, vous pouvez activer le serveur Apache via "Préférences Système &gt; Partage" et cochez Partage web</p>
+<p style="text-align: center;"><a href="https://s3-eu-west-1.amazonaws.com/sylvain.github.com/images/image-2.png"><img class="size-medium wp-image-383 alignnone" title="partage-mac-os-10-5" src="https://s3-eu-west-1.amazonaws.com/sylvain.github.com/images/image-2-300x251.png" alt="partage-mac-os-10-5" width="300" height="251" /></a></p>
+<p style="text-align: left;">Pour tester que PHP est bien activé, vous pouvez vous rendre sur le répertoire Sites de votre Mac et créer un fichier test.php contenant le code suivant :</p>
+
+<pre style="text-align: left;">&lt;?php phpinfo(); ?&gt;</pre>
+<p style="text-align: left;">Avec votre navigateur ouvrez l'emplacement "http://localhost/~utilisateur/test.php", vous devez voir une page de ce type :</p>
+<p style="text-align: center;"><a href="https://s3-eu-west-1.amazonaws.com/sylvain.github.com/images/phpinfo.png"><img class="size-medium wp-image-384 aligncenter" title="phpinfo" src="https://s3-eu-west-1.amazonaws.com/sylvain.github.com/images/phpinfo-300x151.png" alt="phpinfo" width="300" height="151" /></a></p>
+<p style="text-align: left;">Si c'est le cas, vous avez terminé l'activation de PHP. Vous pouvez lancer/arréter apache via les Préférences Système ou en ligne de commande  sous Terminal :</p>
+
+<pre style="text-align: left;">apachectl (start|stop|restart)</pre>
+<h3 style="text-align: left;">MySQL</h3>
+Contrairement à PHP, MySQL n'est pas installé par défaut. En revanche, il existe un package permettant de le faire très facilement.
+
+Allez sur la page de téléchargement du site MySQL : <a href="http://dev.mysql.com/downloads/mysql/5.1.html#macosx-dmg">http://dev.mysql.com/downloads/mysql/5.1.html#macosx-dmg</a> et télécharger le package approprié, à savoir Mac OS X 10.5 (x86) en général.
+
+Installez le comme n'importe quelle application. Pour l'activez, il ne vous reste qu'à vous rendre dans les Préférences Système, une icone MySQL a du apparaître en bas. Vous avez alors une fenêtre de ce type pour l'activer :
+<p style="text-align: center;"><a href="https://s3-eu-west-1.amazonaws.com/sylvain.github.com/images/image-3.png"><img class="size-medium wp-image-390 aligncenter" title="mysql-mac-os-x" src="https://s3-eu-west-1.amazonaws.com/sylvain.github.com/images/image-3-300x164.png" alt="mysql-mac-os-x" width="300" height="164" /></a></p>
+<p style="text-align: left;">C'est terminé !</p>

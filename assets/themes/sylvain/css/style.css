@@ -12,6 +12,7 @@ html, body {
 
   .masthead {
     text-align: center;
+    padding: 0 20px;
   }
 
   .masthead .brand-avatar {

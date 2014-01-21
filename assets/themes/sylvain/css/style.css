@@ -2,13 +2,26 @@
 html, body {
   background-color: #F9F7F5;
   color: #666;
+}
 
+@media (max-width: 767px) {
+  .container-narrow {
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .masthead {
+    text-align: center;
+  }
+
+  .masthead .brand-avatar {
+    display: none;
+  }
 }
 
 #header {
   border-bottom: 1px solid #DED6D4;
   margin-bottom: 30px;
-
 }
 
 h2 {

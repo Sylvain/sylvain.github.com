@@ -6,9 +6,7 @@ html, body {
 }
 
 #header {
-  border-top: 4px solid #DED6D4;
-  background: #f2ece6;
-  border-bottom: 4px solid #DED6D4;
+  border-bottom: 1px solid #DED6D4;
   margin-bottom: 30px;
 
 }
@@ -45,9 +43,9 @@ a:hover {
 }
 
 .masthead {
-  margin: 0 auto;
-  max-width: 660px; 
-  min-height: 130px; 
+  margin: 10px auto;
+  max-width: 660px;
+  min-height: 130px;
 }
 
 .masthead a {
@@ -86,16 +84,16 @@ a:hover {
 }
 
 .post  {
-  margin-top: 20px;
-  padding-top: 20px;
+  margin-top: 30px;
+  padding-top: 30px;
   border-top: 1px solid #EFEAE4;
 }
 
 .post h1 {
-  font-size: 22px;
+  font-size: 30px;
   color: #444;
   margin: 0;
-  line-height: 22px;
+  line-height: 45px;
 }
 
 .post h2 {
@@ -109,9 +107,10 @@ a:hover {
 
 .post .date {
   margin: 3px 0 20px 0;
-  color: #C0B2A5;
+  color: #888;
   font-size: 12px;
 }
+
 
 .post .date-link {
   color: #BEAA99;
@@ -128,18 +127,24 @@ a:hover {
 }
 
 .posts .post h1 {
-  font-size: 15px;
-  line-height: 19.5px;
+  font-size: 22px;
+  line-height: 30px;
 }
 
 .posts .post-header {
   margin-bottom: 15px;
 }
 
+.post .post-content {
+  font-size: 16px;
+  line-height: 26px;
+  color: #444;
+}
+
 .post .aligncenter {
-display: block;
-margin-left: auto;
-margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .post img {
@@ -148,6 +153,10 @@ margin-right: auto;
 }
 
 /* tag_box ======================================================== */
+
+.tags {
+  margin-top: 15px;
+}
 
 .tags span.title {
   display: block;
@@ -191,15 +200,15 @@ margin-right: auto;
 .tags-page h2 {
   font-size: 22px;
   color: #444;
-  margin-top: 15px;  
+  margin-top: 15px;
   line-height: 22px;
 }
-	
+
 /* archive-page ======================================================== */
 
 .archive-page  h3 {
   font-size: 16px;
   color: #444;
-  margin-top: 15px;  
+  margin-top: 15px;
   line-height: 18.5px;
 }

@@ -1,22 +1,11 @@
 <div class="post">
   <div class="row-fluid">
 
-    <div class="span2 tags hidden-phone">
-      {% unless page.tags == empty %}
-        <span class='title'>Tags</span>
-        <ul class="tag_box">
-        {% assign tags_list = page.tags %}
-        {% include JB/tags_list %}
-        </ul>
-      {% endunless %} 
-
-    </div>
-
-    <div class="span10">
+    <div class="span12">
 
       <div class="post-header">
         <h1>
-          {% if page.tags.first == 'Statut' %} 
+          {% if page.tags.first == 'Statut' %}
             {{ content }}
           {% elsif page.tags.first == 'Lien' %}
             <a href="{{ page.meta.postalicious_href }}">{{ page.title }}</a>
@@ -27,9 +16,24 @@
         <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
       </div>
 
-      {% unless page.tags.first == 'Statut' %} 
+      {% unless page.tags.first == 'Statut' %}
+      <div class="post-content">
         {{ content }}
+        {% if page.tags.first == 'Lien'%}
+          <p><a href="{{ page.meta.postalicious_href }}">Aller sur le site &rarr;</a> </p>
+        {% endif %}
+      </div>
       {% endunless %}
+
+      <div class="tags">
+        {% unless page.tags == empty %}
+          <span class='title'>Tags</span>
+          <ul class="tag_box">
+          {% assign tags_list = page.tags %}
+          {% include JB/tags_list %}
+          </ul>
+        {% endunless %}
+      </div>
 
       <hr>
       <div class="pagination">
@@ -47,6 +51,9 @@
         {% endif %}
         </ul>
       </div>
+
+
+
       <hr>
       {% include JB/comments %}
 

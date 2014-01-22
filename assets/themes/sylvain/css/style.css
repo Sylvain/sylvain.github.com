@@ -1,6 +1,7 @@
 /* Override some defaults */
 html, body {
-  background-color: #F9F7F5;
+  /*background-color: #F9F7F5;*/
+  background-color: #f1efec;
   color: #666;
 }
 
@@ -21,8 +22,8 @@ html, body {
 }
 
 #header {
-  border-bottom: 1px solid #DED6D4;
   margin-bottom: 30px;
+  background-color: #fff;
 }
 
 h2 {
@@ -57,7 +58,7 @@ a:hover {
 }
 
 .masthead {
-  margin: 10px auto;
+  margin: 0px auto 10px auto;
   max-width: 660px;
   min-height: 130px;
 }
@@ -72,7 +73,7 @@ a:hover {
 }
 
 .masthead h3 {
-  margin-top: 15px;
+  margin-top: 20px;
   margin-bottom: 5px;
   line-height: 24.5px;
 }
@@ -81,7 +82,7 @@ a:hover {
   height: 100px;
   width: 100px;
   border-radius: 100px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .masthead .infos {
@@ -108,6 +109,7 @@ a:hover {
   color: #444;
   margin: 0;
   line-height: 45px;
+  font-family: "merriweather";
 }
 
 .post h2 {
@@ -141,8 +143,8 @@ a:hover {
 }
 
 .posts .post h1 {
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .posts .post-header {
@@ -164,6 +166,10 @@ a:hover {
 .post img {
   border: 5px solid #E6E3D2;
   margin-top: 5px;
+}
+
+.content .post blockquote {
+  margin-top: 10px;
 }
 
 /* tag_box ======================================================== */
@@ -225,4 +231,8 @@ a:hover {
   color: #444;
   margin-top: 15px;
   line-height: 18.5px;
+}
+
+.content blockquote {
+  border-left: 5px solid #fff;
 }
